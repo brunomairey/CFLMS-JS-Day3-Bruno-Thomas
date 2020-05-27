@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>int2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+	<input id="math"><br>
+	<input id="physics"><br>
+	<input id="english"><br>
+
+	<button onclick="calc()">
+		Submit
+	</button><br>
+
+	<p>Sum: <span id="sum"></span></p>
+	<p>Average: <span id="average"></span></p>
+
+    <script>
+		function calc(){
+		var math = Number(document.getElementById("math").value)
+    	var physics = Number(document.getElementById("physics").value)
+    	var english = Number(document.getElementById("english").value)
+    	console.log(math, physics, english);
+			var sum = math + english + physics
+			var aver = sum/3
+			var out = [sum, aver]
+			if (isNaN(math)||isNaN(physics)||isNaN(english)){
+				return "Please enter only numbers";
+			}
+			document.getElementById("sum").innerHTML = sum
+			document.getElementById("average").innerHTML = aver
+			return out
+		}
+		// document.getElementById("sum").innerHTML = calc()[0]
+
+    </script>
+</body>
+
+</html>

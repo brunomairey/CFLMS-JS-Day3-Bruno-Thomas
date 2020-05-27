@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>int2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+
+    <script>
+		var min = prompt("minutes")
+		function calc(minutes){
+		var h = Math.floor(min/60)
+		var min2 = min%60
+		var text = (min+" minutes = "+h+" hour(s) and "+min2+" minute(s).")
+		return text}
+		document.write(calc())
+    </script>
+</body>
+
+</html>
