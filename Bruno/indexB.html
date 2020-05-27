@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    
+    <!--<script src="basic2intermediate1.js" type="text/javascript" charset="utf-8"></script>-->
+    <!--<script src="basicB.js" type="text/javascript" charset="utf-8"></script>-->
+
+    <p> Enter your future </p>
+<p>Job <input id="job_title"> </p>
+<p>location <input id="location"> </p>
+<p>partner <input id="partners_name"> </p>
+<p>children <input id="number_childrens"> </p>
+<button type="button" onclick="crystalGazer()">Submit</button>
+
+<p id="future"></p>
+
+
+<!--<script type="text/javascript">
+function crystalGazer ((document.getElementById("job_title").value), (document.getElementById("location").value), (document.getElementById("partners_name").value), (document.getElementById("number_childrens").value)) {
+	var all =("You will be a " + job_title + " in " + location + " and married to " + partners_name + " with " + number_childrens + " childrens.<br>");
+	document.getElementById("future").innerHTML=all;
+	return all
+	}
+document.write(crystalGazer("IT", "New York", "Carmen", 2))
+	
+    </script> -->
+
+    <script type="text/javascript">
+	function crystalGazer (job_title, location, partners_name, number_childrens) {
+		var job_title = (document.getElementById("job_title").value);
+		var location = (document.getElementById("location").value);
+		var partners_name = (document.getElementById("partners_name").value);
+		var number_childrens = (document.getElementById("number_childrens").value);
+	var all =("You will be a " + job_title + " in " + location + " and married to " + partners_name + " with " + number_childrens + " childrens.<br>");
+	document.getElementById("future").innerHTML=all;
+	return all
+	}
+//document.write(crystalGazer((document.getElementById("job_title").value), (document.getElementById("location").value), (document.getElementById("partners_name").value), (document.getElementById("number_childrens").value)))
+	
+    </script>
+</body>
+</html>

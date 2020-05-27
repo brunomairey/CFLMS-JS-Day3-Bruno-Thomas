@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p> Enter your grades </p>
+<p>Math <input id="math"> </p>
+<p>Physics <input id="physics"> </p>
+<p>English <input id="english"> </p>
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="sum"></p>
+<p id="avr"></p>
+<script>
+
+function myFunction() {
+ 	 //var x, y, z, sum;
+
+ 	 var x = Number(document.getElementById("math").value);
+  	var y = Number(document.getElementById("physics").value);
+ 	 var z = Number(document.getElementById("english").value);
+ 	var sum = x + y + z;
+ 	var avr = sum/3
+ 	document.getElementById("sum").innerHTML=sum;
+	document.getElementById("avr").innerHTML=avr;
+	return sum;
+	
+}
+</script>
+
+</body>
+</html> 
+
+</body>
+</html>
