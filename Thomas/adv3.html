@@ -12,14 +12,10 @@
 <body>
 
     <script>
-		var date1 = new Date(prompt("Date"))
-		console.log(date1)
-		var date2 = (function(date1){
-			var date3 = new Date(date1-1);
-			return date3;
-			console.log(date3)
-		})
-		document.write("yesterday was "+date2())
+		var r = Math.round(Math.random()*255)
+		var g = Math.round(Math.random()*255)
+		var b = Math.round(Math.random()*255)
+		document.body.style.backgroundColor = "rgb("+r+","+g+","+b+")"
     </script>
 </body>
 
