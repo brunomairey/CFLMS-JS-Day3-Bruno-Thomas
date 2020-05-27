@@ -9,5 +9,4 @@ function product(){
 	return prod
 
 }
-var result = product()
-document.write(result)
+document.write(product())
